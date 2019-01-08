@@ -4,23 +4,33 @@ import java.util.Scanner;
 public class ControlFlowExercises {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("What number would you like to go up to? ");
-        int userNumber = scanner.nextInt();
-        System.out.println("Number" + "  " + "Squared" + "  " + "Cubed");
-        System.out.println("------" + "  " + "-------" + "  " + "-----");
-        for (int i = 0; i <= userNumber; i++) {
-            int numberSquared = (int) Math.pow(i, 2);
-            int numberCubed = (int) Math.pow(i, 3);
-            String message = "\n" + i + "       " + numberSquared + "        " + numberCubed;
-            System.out.print(message);
-        }
+        System.out.print("What grade did you receive?");
+        int userGrade = scanner.nextInt();
+        System.out.println("Grade Ranges:");
+        System.out.println("A : 100 - 88\n" + "B : 87 - 80\n" + "C : 79 - 67\n" + "D : 66 - 60\n" + "F : 59 - 0");
         System.out.println();
-        System.out.println("Continue? y/N");
+        System.out.println("Do you agree with Grade Range? y/N");
         String choice = scanner.next();
         if (choice.equals("y")) {
-            System.out.println("Done");
+            if(userGrade <= 59) {
+                System.out.println("F");
+            }else if (userGrade <= 66){
+                System.out.println("D");
+            }else if (userGrade <= 75){
+                System.out.println("C");
+            }else if (userGrade <= 79){
+                System.out.println("C+");
+            }else if (userGrade <= 84){
+                System.out.println("B");
+            }else if (userGrade <= 87){
+                System.out.println("B+");
+            }else if (userGrade <= 95){
+                System.out.println("A");
+            }else if (userGrade <= 100){
+                System.out.println("A+");
+            }
         } else {
-            System.out.println("Sorry Nothing else to do still ending Muhahahaha!!!");
+            System.out.println("You get an automatic F for not complying Muahaha");
         }
     }
 }
