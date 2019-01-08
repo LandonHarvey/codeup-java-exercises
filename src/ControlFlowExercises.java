@@ -2,24 +2,19 @@ import java.sql.SQLOutput;
 
 public class ControlFlowExercises {
     public static void main(String[] args) {
-//        int i = 5;
-//        while (i < 15) {
-//            System.out.println(i);
-//            i++;
-//        }
+        for (int i = 1; i <= 100; i++) {
 
-//        long x = 2;
-//        do {
-//            System.out.println(i);
-//            x = x * x;
-//        }while (x < 1000000);
-
-        long x = 2;
-        for (int i = 5; i < 15; i++) {
-            System.out.println(i);
-            if (x < 1000000) {
-                System.out.println(x);
-                x = x * x;
+            if (i % 3 == 0 && i % 5 ==0) {
+                System.out.print(i);
+                System.out.println(" FizzBuzz");
+            } else if (i % 3 == 0 && i % 5 != 0) {
+                System.out.print(i);
+                System.out.println(" Fizz");
+            } else if(i % 5 == 0 && i % 3 != 0) {
+                System.out.print(i);
+                System.out.println(" Buzz");
+            }else {
+                System.out.println(i);
             }
         }
     }
