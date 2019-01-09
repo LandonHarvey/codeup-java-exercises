@@ -1,6 +1,6 @@
 public class HelloWorld {
     public static void main(String[] args) {
-        int myFavoriteNumber = 81;
+        int myFavoriteNumber = (int) Math.floor(Math.random() * 101);
         String myString = "Your Favorite number is: ";
         double myNumber = 3.14;
         System.out.println("Hello World");
