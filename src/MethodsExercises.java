@@ -49,7 +49,7 @@ public class MethodsExercises {
             long res = 1;
             long i;
             for (i = 2; i <= facInput; i++)
-                res *= i;
+                res = res * i;
             System.out.println(facInput + "! = " + res);
             return res;
         }return facInput;
