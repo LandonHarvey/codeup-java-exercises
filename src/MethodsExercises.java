@@ -1,36 +1,21 @@
 import java.util.Scanner;
 
 public class MethodsExercises {
-
     public static double add(double n, double m) {
-        double result = n + m;
-        System.out.println(result);
-        return result;
+        return n + m;
     }
-
     public static double sub(double n, double m) {
-        double result = n - m;
-        System.out.println(result);
-        return result;
+        return n -m;
     }
-
     public static double mult(double n, double m) {
-        double result = n * m;
-        System.out.println(result);
-        return result;
+        return n * m;
     }
-
     public static double div(double n, double m) {
-            double result = n / m;
-            System.out.println(result);
-            return result;
+            return n/m;
     }
     public static double mod(double n, double m) {
-        double result = n % m;
-        System.out.println(result);
-        return result;
+        return n%m;
     }
-
     public static int getInteger(int min, int max) {
         Scanner scanner = new Scanner(System.in).useDelimiter("\n");
         int input = scanner.nextInt();
@@ -73,11 +58,11 @@ public class MethodsExercises {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in).useDelimiter("\n");
-//        add(1, 2);
-//        sub(1, 2);
-//        mult(1, 2);
-//        div(2, 0);
-//        mod(1, 2);
+        add(1, 2);
+        sub(1, 2);
+        mult(1, 2);
+        div(2, 0);
+        mod(1, 2);
         System.out.print("Enter a number between 1 and 10: ");
         int userInput = getInteger(1, 10);
         System.out.print("Enter a number between 1 and 19: ");
