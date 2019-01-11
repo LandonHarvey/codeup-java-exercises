@@ -156,6 +156,7 @@ public class bonusExcer {
         }
     }
 
+
     public static boolean isPrime(int userNumber){
         int factors = 0;
         int j = 1;
@@ -187,25 +188,25 @@ public class bonusExcer {
     }
 
     public static void main(String[] args) {
-        firstChar();
-        secondChar();
-        lastChar();
-        secondToLastChar();
-        userWantsToContinue();
-        Scanner scanner = new Scanner(System.in).useDelimiter("\n");
-        System.out.println("Please Enter a number?");
-        int userNumber = scanner.nextInt();
-        isEven(userNumber);
-        isOdd(userNumber);
-        countOdd(0, userNumber);
-        countEven(0, userNumber);
-        System.out.println("Please Enter a word?");
-        String userCharacter = scanner.nextLine();
-        isVowel(userCharacter);
-        hasVowels(userCharacter);
-        countVowels(userCharacter);
-        fizzBuzz(1, 100);
-        isPrime(8);
-        getTwentyPrimes();
+//        firstChar();
+//        secondChar();
+//        lastChar();
+//        secondToLastChar();
+//        userWantsToContinue();
+//        Scanner scanner = new Scanner(System.in).useDelimiter("\n");
+//        System.out.println("Please Enter a number?");
+//        int userNumber = scanner.nextInt();
+//        isEven(userNumber);
+//        isOdd(userNumber);
+//        countOdd(0, userNumber);
+//        countEven(0, userNumber);
+//        System.out.println("Please Enter a word?");
+//        String userCharacter = scanner.nextLine();
+//        isVowel(userCharacter);
+//        hasVowels(userCharacter);
+//        countVowels(userCharacter);
+//        fizzBuzz(1, 100);
+//        isPrime(8);
+//        getTwentyPrimes();
     }
 }
