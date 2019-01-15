@@ -156,7 +156,6 @@ public class bonusExcer {
         }
     }
 
-
     public static boolean isPrime(int userNumber){
         int factors = 0;
         int j = 1;
@@ -208,5 +207,9 @@ public class bonusExcer {
 //        fizzBuzz(1, 100);
 //        isPrime(8);
 //        getTwentyPrimes();
+        double a = .1;
+        double b = .2;
+        double c = (((a * 100) + (b * 100)) / 100);
+        System.out.println(c);
     }
 }
