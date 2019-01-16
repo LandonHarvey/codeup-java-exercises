@@ -12,12 +12,12 @@ public class Input {
 
     public static String getString(String prompt) {
         System.out.println(prompt);
-        userString = scanner.nextLine();
+        userString = scanner.next() + scanner.nextLine();
         return userString;
     }
     public static String getString() {
         System.out.println("String Please");
-        userString = scanner.nextLine();
+        userString = scanner.next() + scanner.nextLine();
         return userString;
     }
 

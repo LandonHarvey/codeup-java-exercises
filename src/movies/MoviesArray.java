@@ -105,20 +105,4 @@ public class MoviesArray {
                 new Movie("Yankee Doodle Dandy", "musical")
         };
     }
-    public static Movie[] sortedCategory (String category){
-        Movie[] allMovies = findAll();
-        Movie[] sortedMovies = new Movie[allMovies.length];
-        for (int i = 0; i < allMovies.length; i++){
-            if (allMovies[i].getCategory().equals(category)){
-                sortedMovies[i] = allMovies[i];
-            }
-        }
-        String output = "";
-        for (Movie movie: sortedMovies) {
-            if (movie != null){
-                System.out.format("Movie: %s%nCategory: %s%n%n", movie.getName(), movie.getCategory());
-            }
-        }
-        return sortedMovies;
-    }
 }
